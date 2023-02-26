@@ -1,0 +1,890 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+header {
+  height: 240px;
+  background-color: #230f33;
+  color: #ffff;
+}
+header .navbar {
+  padding-top: 10px;
+}
+header .navbar ul {
+  display: flex;
+  justify-content: end;
+}
+header .navbar ul li {
+  padding: 0px 15px;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+header .navbar ul li:hover {
+  text-decoration: underline;
+}
+header .logocontainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logocontainer .logo {
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+header .logocontainer .logo .btn button {
+  margin-left: 15px;
+  background-color: #230f33;
+  padding: 10px 15px;
+  border: 1px solid #ffff;
+  color: #ffff;
+  border-radius: 5px;
+}
+header .logocontainer .logo .btn button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header .logocontainer .icons {
+  display: flex;
+}
+header .logocontainer .icons .icn i {
+  margin-left: 15px;
+  font-size: 2rem;
+  color: #ffff;
+}
+header .logocontainer .icons .icn i:hover {
+  background-color: #6b696944;
+  cursor: pointer;
+  border-radius: 5px;
+}
+header .logocontainer .icons button {
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #230f33;
+  border: 1px solid #ffff;
+  color: #ffff;
+}
+header .logocontainer .icons button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.search {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.search .chicago {
+  margin-bottom: 8px;
+  color: #ffff;
+  text-align: center;
+  font-size: larger;
+}
+.search .chicago:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.search input {
+  width: 700px;
+  height: 50px;
+  border-radius: 50px;
+}
+.search .maininput input::placeholder {
+  text-align: center;
+}
+.bottomheader {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 10px 50px;
+  background-color: rgb(205, 235, 225);
+}
+.bottomheader a {
+  color: rgb(29, 61, 29);
+  text-decoration: none;
+}
+.bottomheader a:hover {
+  text-decoration: underline;
+}
+.bottomheader .rightitem {
+  padding-bottom: 20px;
+}
+main .container h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+main .container h1 span {
+  font-weight: bold;
+}
+main .container .product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-top: 30px;
+}
+main .product img {
+  border-radius: 15px;
+}
+main .product a {
+  line-height: 25px;
+  text-decoration: none;
+}
+main .product h3 {
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+main .product span {
+  color: black;
+}
+main .product p {
+  color: rgb(66, 56, 56);
+}
+main .product .rate .checked {
+  color: orange;
+}
+main .product .prise {
+  display: flex;
+}
+main .product .prise p b {
+  font-weight: bold;
+  color: rgb(56, 161, 79);
+}
+main .product .prise .off {
+  background-color: rgb(221, 217, 217);
+  margin-left: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+main .product .prise .off p {
+  color: rgb(56, 161, 79);
+}
+main .product .prise .off {
+  display: flex;
+}
+main .product .statistics span {
+  color: rgb(143, 132, 132);
+}
+main .product .product3 .prise3 span {
+  color: red;
+}
+main .product .product3 .prise3 p b {
+  color: red;
+}
+main .product a:hover img {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+main .container .beauty {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+main .container .beauty img {
+  width: 600px;
+}
+main .container .beauty .skate {
+  position: relative;
+}
+main .container .beauty .skate .titleskate {
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+main .container .beauty .skate .titleskate h1 {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+main .container .beauty .skate .titleskate p {
+  line-height: 20px;
+}
+main .container .beauty .skate .titleskate button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+main .container .beauty .skincare {
+  position: relative;
+}
+main .container .beauty .skincare .titleskin {
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+main .container .beauty .skincare .titleskin h1 {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+main .container .beauty .skincare .titleskin p {
+  line-height: 20px;
+}
+main .container .beauty .skincare .titleskin button {
+  margin-top: 35px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+main .container .beauty .btn button:hover {
+  cursor: pointer;
+}
+main .container .popular {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+}
+main .container .popular h1 {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+}
+main .container .popular a {
+  text-decoration: none;
+}
+main .container .popular1 {
+  line-height: 20px;
+}
+main .container .popular .popular1 img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+main .container .popular .popular1 h3 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .container .popular .popular1 p {
+  color: black;
+}
+main .container .popular .popular1 span {
+  color: black;
+}
+main .container .popular .rate .checked {
+  color: orange;
+}
+main .container .popular1 .prise {
+  font-size: large;
+  display: flex;
+}
+main .container .popular1 .prise .sale {
+  display: flex;
+}
+main .container .popular1 .prise .sale span {
+  color: rgb(56, 161, 79);
+}
+main .container .popular1 .prise .off {
+  margin-left: 15px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .popular1 .prise .off p {
+  color: rgb(56, 161, 79);
+}
+main .container .popular1 .prise span {
+  margin: 0 5px;
+}
+main .container .popular2 {
+  line-height: 20px;
+}
+main .container .popular .popular2 img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+main .container .popular .popular2 h3 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .container .popular .popular2 p {
+  color: black;
+}
+main .container .popular .popular2 span {
+  color: black;
+}
+main .container .popular .rate .checked {
+  color: orange;
+}
+main .container .popular2 .prise {
+  font-size: large;
+  display: flex;
+}
+main .container .popular2 .prise .sale {
+  display: flex;
+}
+main .container .popular2 .prise .sale span {
+  color: rgb(56, 161, 79);
+}
+main .container .popular2 .prise .off {
+  margin-left: 15px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .popular2 .prise .off p {
+  color: rgb(56, 161, 79);
+}
+main .container .popular2 .prise span {
+  margin: 0 5px;
+}
+main .container .popular3 {
+  line-height: 20px;
+}
+main .container .popular .popular3 img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+main .container .popular .popular3 h3 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .container .popular .popular3 p {
+  color: black;
+}
+main .container .popular .popular3 span {
+  color: black;
+}
+main .container .popular .rate .checked {
+  color: orange;
+}
+main .container .popular3 .prise {
+  font-size: large;
+  display: flex;
+}
+main .container .popular3 .prise .sale {
+  display: flex;
+}
+main .container .popular3 .prise .sale span {
+  color: rgb(56, 161, 79);
+}
+main .container .popular3 .prise .off {
+  margin-left: 15px;
+}
+main .container .popular3 .prise .off p {
+  color: red;
+}
+main .container .popular3 .prise span {
+  margin: 0 5px;
+}
+main .container .popular3 .prise .sale {
+  margin-left: 5px;
+}
+main .container .popular3 .prise .off {
+  display: flex;
+}
+main .container .popular3 .prise .off span {
+  color: red;
+}
+main .container .popular4 {
+  line-height: 20px;
+}
+main .container .popular .popular4 img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+main .container .popular .popular4 h3 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .container .popular .popular4 p {
+  color: black;
+}
+main .container .popular .popular4 span {
+  color: black;
+}
+main .container .popular .rate .checked {
+  color: orange;
+}
+main .container .popular4 .prise {
+  font-size: large;
+  display: flex;
+}
+main .container .popular4 .prise .sale {
+  display: flex;
+}
+main .container .popular4 .prise .sale span {
+  color: rgb(56, 161, 79);
+}
+main .container .popular4 .prise .off {
+  margin-left: 15px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .popular4 .prise .off p {
+  color: rgb(56, 161, 79);
+}
+main .container .popular4 .prise span {
+  margin: 0 5px;
+}
+main .container .popular a:hover img {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+main .container .bluebanner {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-top: 70px;
+}
+main .container .bluebanner a img {
+  object-fit: cover;
+  margin: 0 25%;
+}
+main .container .deals {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+main .container .deals .deal1 img {
+  border-radius: 5px;
+}
+main .container .deals .deal1 h3 {
+  margin-top: 10px;
+}
+main .container .deals .deal1 a {
+  text-decoration: none;
+  color: black;
+}
+main .container .deals .deal1 {
+  line-height: 20px;
+}
+main .container .deals .deal1 h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .container .deals .deal1 .rate .checked {
+  color: orange;
+}
+main .container .deals .deal1 .prise {
+  display: flex;
+}
+main .container .deals .deal1 .prise p span {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .deal1 .prise .off {
+  margin-left: 5px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .deals .deal1 .prise .off {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .statistics {
+  color: rgb(143, 132, 132);
+}
+main .container .deals .deal2 img {
+  border-radius: 5px;
+}
+main .container .deals .deal2 h3 {
+  margin-top: 10px;
+}
+main .container .deals .deal2 a {
+  text-decoration: none;
+  color: black;
+}
+main .container .deals .deal2 {
+  line-height: 20px;
+}
+main .container .deals .deal2 h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .container .deals .deal2 .rate .checked {
+  color: orange;
+}
+main .container .deals .deal2 .prise {
+  display: flex;
+}
+main .container .deals .deal2 .prise p span {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .deal2 .prise .off {
+  margin-left: 5px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .deals .deal2 .prise .off {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .statistics {
+  color: rgb(143, 132, 132);
+}
+main .container .deals .deal3 img {
+  border-radius: 5px;
+}
+main .container .deals .deal3 h3 {
+  margin-top: 10px;
+}
+main .container .deals .deal3 a {
+  text-decoration: none;
+  color: black;
+}
+main .container .deals .deal3 {
+  line-height: 20px;
+}
+main .container .deals .deal3 h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .container .deals .deal3 .rate .checked {
+  color: orange;
+}
+main .container .deals .deal3 .prise {
+  display: flex;
+}
+main .container .deals .deal3 .prise p span {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .deal3 .prise .off {
+  margin-left: 5px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .deals .deal3 .prise .off {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .statistics {
+  color: rgb(143, 132, 132);
+}
+main .container .deals .deal4 img {
+  border-radius: 5px;
+}
+main .container .deals .deal4 h3 {
+  margin-top: 10px;
+}
+main .container .deals .deal4 a {
+  text-decoration: none;
+  color: black;
+}
+main .container .deals .deal4 {
+  line-height: 20px;
+}
+main .container .deals .deal4 h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .container .deals .deal4 .rate .checked {
+  color: orange;
+}
+main .container .deals .deal4 .prise {
+  display: flex;
+}
+main .container .deals .deal4 .prise p span {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .deal4 .prise .off {
+  margin-left: 5px;
+  background-color: rgb(221, 217, 217);
+}
+main .container .deals .deal4 .prise .off {
+  color: rgb(56, 161, 79);
+}
+main .container .deals .statistics {
+  color: rgb(143, 132, 132);
+}
+main .container .deals a:hover img {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+main .jacketbanner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .jacketbanner img {
+  margin: 50px 150px;
+}
+main .container .lastmain {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+main .container .lastmain .left {
+  position: relative;
+}
+main .container .lastmain .left .onleft {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+main .container .lastmain .left .onleft h1 {
+  color: #ffff;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+main .container .lastmain .left .onleft button {
+  color: #ffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #ffff;
+}
+main .container .lastmain .right {
+  position: relative;
+}
+main .container .lastmain .right .onright {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+main .container .lastmain .right .onright h1 {
+  font-weight: bold;
+  color: #ffff;
+  margin-bottom: 15px;
+}
+main .container .lastmain .right .onright p {
+  color: #ffff;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+main .container .lastmain .right .onright .btn button {
+  color: #ffff;
+  background-color: transparent;
+  border: 2px solid #ffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+main .container .lastmain .btn button:hover {
+  cursor: pointer;
+}
+main .container .pagination {
+  margin-left: 500px;
+  margin-top: 50px;
+}
+main .container .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a.active {
+  background-color: #5e665e;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+footer .upperfooter a {
+  background-color: #afa6abf5;
+  height: 100px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 40px;
+  display: flex;
+  margin-top: 150px;
+  text-decoration: none;
+}
+footer .upperfooter a h1 {
+  margin-right: 15px;
+  color: black;
+}
+footer .upperfooter a p {
+  color: #5e665e;
+}
+footer .footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 80px 100px;
+  width: 100%;
+  height: 300px;
+  background-color: #230f33;
+}
+footer .footer h1 {
+  color: #ffff;
+  margin-bottom: 30px;
+}
+footer .mainfooter .footer .customersupport {
+  border-right: 2px solid rgb(105, 103, 103);
+}
+footer .mainfooter .footer .customersupport ul li a {
+  text-decoration: none;
+  color: #ffff;
+  line-height: 60px;
+}
+footer .mainfooter .footer .customersupport ul li:hover a {
+  text-decoration: underline;
+}
+footer .mainfooter .footer .customersupport .btn button {
+  margin-bottom: 5px;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #ffff;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+}
+footer .mainfooter .footer .customersupport .btn button a {
+  text-decoration: none;
+  color: #ffff;
+}
+footer .mainfooter .footer .customersupport .btn button:hover a {
+  text-decoration: underline;
+}
+footer .mainfooter .footer .customersupport .btn button:hover {
+  cursor: pointer;
+}
+footer .footer .sellongroupon {
+  padding-left: 30px;
+}
+footer .mainfooter .footer .sellongroupon ul li a {
+  line-height: 38px;
+  color: #ffff;
+  text-decoration: none;
+}
+footer .mainfooter .footer .sellongroupon ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer .company {
+  padding-left: 30px;
+}
+footer .mainfooter .footer .company ul li a {
+  line-height: 38px;
+  color: #ffff;
+  text-decoration: none;
+}
+footer .mainfooter .footer .company ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer .company {
+  padding-left: 30px;
+}
+footer .mainfooter .footer .quicklinks ul li a {
+  line-height: 38px;
+  color: #ffff;
+  text-decoration: none;
+}
+footer .mainfooter .footer .quicklinks ul li a:hover {
+  text-decoration: underline;
+}
